@@ -1,0 +1,91 @@
+@charset "ISO-8859-1";
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+label{
+	
+	float: left;
+	position: relative;
+	clear: left;
+	
+}
+
+
+#button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 550px;
+  width: 450px;
+  margin-left: 700px;
+  margin-top: 40px;
+  overflow: scroll;
+}
+
+
+.error{
+  background: #ff6161 !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: relative; 
+  display: flex; 
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+  
+}
+
+.error:before{
+  content: '';  
+  width: 0;  
+  height: 0;  
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #c51244;
+  position: absolute;  
+  top: -10px; 
+}
+
+.error:after{
+  color: #ff6161 !important;
+}
+
+.error input, .error select{ 
+  background: #ff6161; 
+  color: #ff6161;
+}
+
+
+.error input, .error select{ 
+  border: 1px solid #ff6161 !important; 
+}
